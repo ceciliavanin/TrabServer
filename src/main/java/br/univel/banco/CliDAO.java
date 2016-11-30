@@ -77,7 +77,7 @@ public class CliDAO {
 			final Date datanasc = result.getDate("cdatanasc");
 			final String cpf = result.getString("ccpf");
 			final String rg = result.getString("crg");
-			final Cliente cliente = new Cliente(idcli, nome, rg, cpf, datanasc);
+			final Cliente cliente = new Cliente();
 			cliente.setIdcli(idcli);
 			cliente.setCnome(nome);
 			cliente.setCdata(datanasc);

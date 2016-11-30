@@ -1,6 +1,6 @@
 package br.univel.threads;
 /**
- * 
+ * classe qual inicia a criação de threads
  */
 import java.net.Socket;
 

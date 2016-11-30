@@ -1,25 +1,19 @@
 package br.univel.dto;
 
 import java.sql.Date;
-import javax.xml.bind.annotation.XmlRootElement;
-import br.univel.banco.anotacoes.Coluna;
-import br.univel.banco.anotacoes.Tabela;
 
 /**
  * 
  * Classe básica com atributos e getters e setters referente ao CLIENTE.
  * 
- * Referência com o banco de dados.
  * 
  */
 
 
-@Tabela ("CLIENTE")
-@XmlRootElement
 public class Cliente {
 	
 	
-	public Cliente(int idcli, String cnome, String ccpf, String crg, Date cdata) {
+	public Cliente() {
 
 		this.idcli = idcli;
 		this.cnome = cnome;
@@ -28,22 +22,14 @@ public class Cliente {
 		this.crg = crg;
 	
 	}
-	public Cliente() {
-		// TODO Auto-generated constructor stub
-	}
-	@Coluna (nome = "IDCLI", pk=true)
 	private int idcli;
-	
-	@Coluna (nome="CNOME", tamanho=50)
+
 	private String cnome;
-	
-	@Coluna (nome="CDATA", tamanho=10)
+
 	private Date cdata;
-	
-	@Coluna (nome="CCPF", tamanho=25)
+
 	private String ccpf;
-	
-	@Coluna (nome="CRG", tamanho=25)
+
 	private String crg;
 	
 	public String getCnome() {

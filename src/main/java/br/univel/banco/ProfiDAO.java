@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-import br.univel.banco.anotacoes.Coluna;
-import br.univel.banco.anotacoes.Tabela;
 import br.univel.dto.Profissional;
 /**
  * Nesta classe temos as implementações referentes do PROFISSIONAL ao banco - INSERT/SELECT
@@ -78,7 +76,7 @@ public Collection<Profissional> convert(final ResultSet result) throws SQLExcept
 		final Date datanasc = result.getDate("pdatanasc");
 		final String cpf = result.getString("pcpf");
 		final String rg = result.getString("prg");
-		final Profissional profissional = new Profissional(idprofi, nome, datanasc, cpf, rg);
+		final Profissional profissional = new Profissional();
 		profissional.setIdprofi(idprofi);
 		profissional.setPnome(nome);
 		profissional.setPdata(datanasc);
