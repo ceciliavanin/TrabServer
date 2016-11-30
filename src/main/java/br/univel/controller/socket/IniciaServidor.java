@@ -7,7 +7,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import br.univel.threads.threads;
-
+/**
+ * Esta classe possui as informações e tratativas necessárias para iniciar o servidor
+ * definição de porta do server, quantidades de threads que podem ser executadas, etc.
+ * 
+ * @author Cecilia Vanin
+ *
+ */
 public class IniciaServidor {
 	private final ExecutorService pool = Executors.newFixedThreadPool(4);
 

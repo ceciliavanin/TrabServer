@@ -6,6 +6,11 @@ import br.univel.banco.PostConex;
 import br.univel.banco.ProfiDAO;
 import br.univel.dto.Profissional;
 
+/**
+ * Esta classe faz a tratativa de escolha do usuário ao lidar com a interface
+ * utilizando como método de seleção para ter ações para inserir um novo PROFISSIONAL, alterar ou então excluir.
+ */
+
 public class LendoReceptorProfi {
 	public Object controlar(Object object, int opcao, String query) {
 		Connection conex = null;

@@ -1,5 +1,9 @@
 package br.univel.controller.socket;
 
+/**
+ * Esta classe faz a tratativa de escolha do cliente ao lidar com a interface
+ * utilizando como método de seleção para ter ações para inserir um novo CLIENTE, alterar ou então excluir.
+ */
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;

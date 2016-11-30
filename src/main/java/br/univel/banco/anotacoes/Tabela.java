@@ -1,7 +1,7 @@
 package br.univel.banco.anotacoes;
 
 /**
- * Annotation referente a TABEÇA a ser gravada no banco, e as propriedades para a criação.
+ * Annotation referente a TABELA a ser gravada no banco, e as propriedades para a criação.
  */
 
 import java.lang.annotation.ElementType;
